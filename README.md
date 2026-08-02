@@ -1,120 +1,163 @@
 # 🧠 Cortex AI
 
-> An AI Cognitive Operating System that continuously learns, reasons, predicts, and grows with every user.
+<div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
-![React](https://img.shields.io/badge/React-Frontend-61DAFB)
-![Vite](https://img.shields.io/badge/Vite-Build-purple)
-![License](https://img.shields.io/badge/License-MIT-orange)
+### AI Cognitive Operating System
+
+**An intelligent AI workspace that continuously learns, remembers, reasons, and evolves with every user interaction.**
 
 ---
 
-# Overview
+![Python](https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react)
+![Vite](https://img.shields.io/badge/Vite-Build-646CFF?style=for-the-badge&logo=vite)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite)
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-Cortex AI is a next-generation AI workspace designed to function as a personal cognitive operating system.
-
-Unlike traditional chatbots, Cortex is designed around persistent memory, contextual reasoning, project organization, and long-term user understanding.
-
-The system combines a modern React frontend with a modular FastAPI backend following clean architecture principles.
-
----
-
-# Features
-
-## Authentication
-
-- User Signup
-- Secure Login
-- JWT Authentication
-- Password Encryption
-- Protected Routes
+</div>
 
 ---
 
-## AI Chat
+# 🚀 Overview
 
-- Context-aware conversations
-- Persistent conversation history
+Cortex AI is an intelligent cognitive operating system designed to go beyond traditional AI chatbots.
+
+Instead of only answering prompts, Cortex maintains structured conversations, organizes projects, manages long-term memory, processes uploaded knowledge, and builds personalized context to deliver increasingly intelligent responses.
+
+The project follows a modular, production-inspired architecture with a React frontend and a FastAPI backend.
+
+---
+
+# ✨ Core Features
+
+## 🤖 AI Chat
+
+- Intelligent conversations
+- Conversation history
 - Streaming-ready architecture
-- Multiple conversation support
+- Context-aware responses
+- Multiple chat sessions
 
 ---
 
-## Memory System
+## 🧠 Long-Term Memory
 
-- Long-term memory extraction
-- Memory retrieval
-- Context building
-- Personalized responses
+- Memory extraction
+- Persistent memory storage
+- Personalized AI responses
+- Context reconstruction
+- User-specific knowledge
 
 ---
 
-## Knowledge Management
+## 📁 Knowledge Base
 
-- File uploads
-- Document processing
-- Intelligent chunking
+- Document uploads
+- Intelligent document parsing
+- Text chunking
 - Embedding generation
 - Semantic retrieval
 
 ---
 
-## Projects
+## 📂 Project Workspace
 
 - Project creation
-- Project management
+- Project organization
 - Conversation grouping
-- Workspace organization
+- Workspace management
 
 ---
 
-## Backend Architecture
+## 🔐 Authentication
+
+- User Registration
+- Secure Login
+- JWT Authentication
+- Password Hashing
+- Protected API Routes
+
+---
+
+# 🏗 Architecture
 
 ```
-backend/
-│
-├── app/
-│   ├── api/
-│   ├── core/
-│   ├── database/
-│   ├── models/
-│   ├── prompts/
-│   ├── repositories/
-│   ├── routers/
-│   ├── security/
-│   ├── services/
-│   ├── utils/
-│   └── vectorstore/
-│
-└── requirements.txt
+                +----------------------+
+                |    React Frontend    |
+                +----------+-----------+
+                           |
+                     REST API Calls
+                           |
+                +----------v-----------+
+                |     FastAPI API      |
+                +----------+-----------+
+                           |
+      +--------------------+--------------------+
+      |                    |                    |
+      |                    |                    |
++-----v-----+       +------v------+      +------v------+
+|   Memory  |       | Conversation |      |  Projects  |
+|  Service  |       |   Service    |      |  Service   |
++-----+-----+       +------+-------+      +------+-----+
+      |                    |                     |
+      +----------+---------+---------------------+
+                 |
+          +------v------+
+          | Repository  |
+          |   Layer     |
+          +------+------+
+                 |
+        +--------v--------+
+        | SQLite Database |
+        +-----------------+
 ```
 
 ---
 
-## Frontend Architecture
+# 🗂 Project Structure
 
 ```
-frontend/
+Cortex-AI
 │
-├── src/
-│   ├── components/
-│   ├── context/
-│   ├── features/
-│   ├── pages/
-│   ├── routes/
-│   ├── services/
-│   ├── store/
-│   ├── styles/
-│   ├── theme/
-│   └── utils/
+├── backend
+│   ├── app
+│   │   ├── api
+│   │   ├── core
+│   │   ├── database
+│   │   ├── models
+│   │   ├── prompts
+│   │   ├── repositories
+│   │   ├── routers
+│   │   ├── security
+│   │   ├── services
+│   │   ├── utils
+│   │   └── vectorstore
+│   │
+│   └── requirements.txt
 │
-└── package.json
+├── frontend
+│   ├── public
+│   └── src
+│       ├── components
+│       ├── context
+│       ├── features
+│       ├── pages
+│       ├── routes
+│       ├── services
+│       ├── store
+│       ├── styles
+│       ├── theme
+│       └── utils
+│
+├── docs
+├── README.md
+└── LICENSE
 ```
 
 ---
 
-# Tech Stack
+# ⚙ Tech Stack
 
 ## Frontend
 
@@ -124,36 +167,86 @@ frontend/
 - CSS Modules
 - React Icons
 
+---
+
 ## Backend
 
 - FastAPI
 - SQLAlchemy
-- SQLite
-- JWT Authentication
 - Pydantic
-
-## AI
-
-- Embeddings
-- Vector Search
-- Retrieval Pipeline
-- Prompt Engineering
-- Memory Extraction
+- JWT Authentication
+- SQLite
 
 ---
 
-# Getting Started
+## AI Components
+
+- Memory Management
+- Prompt Engineering
+- Context Builder
+- Embedding Pipeline
+- Retrieval Service
+- Document Processing
+
+---
+
+# 🔄 System Flow
+
+```
+User
+
+↓
+
+React Frontend
+
+↓
+
+FastAPI Backend
+
+↓
+
+Authentication
+
+↓
+
+Conversation Service
+
+↓
+
+Memory Retrieval
+
+↓
+
+Context Builder
+
+↓
+
+AI Response
+
+↓
+
+Conversation Storage
+
+↓
+
+Frontend
+```
+
+---
+
+# 🚀 Installation
 
 ## Clone Repository
 
 ```bash
 git clone https://github.com/sai1234-do/cortex-ai.git
+
 cd cortex-ai
 ```
 
 ---
 
-## Backend
+# Backend
 
 ```bash
 cd backend
@@ -168,13 +261,13 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-Backend runs on:
+Backend:
 
 ```
 http://localhost:8000
 ```
 
-Swagger UI:
+Swagger:
 
 ```
 http://localhost:8000/docs
@@ -182,7 +275,7 @@ http://localhost:8000/docs
 
 ---
 
-## Frontend
+# Frontend
 
 ```bash
 cd frontend
@@ -192,7 +285,7 @@ npm install
 npm run dev
 ```
 
-Frontend runs on:
+Frontend:
 
 ```
 http://localhost:5173
@@ -200,49 +293,71 @@ http://localhost:5173
 
 ---
 
-# Project Structure
+# 📡 API Modules
 
-```
-Cortex-AI/
-│
-├── backend/
-├── frontend/
-├── docs/
-├── LICENSE
-└── README.md
-```
+Current backend modules include:
+
+- Authentication
+- Chat
+- Conversation
+- Memory
+- Projects
+- Messages
+- File Upload
+- Health Check
 
 ---
 
-# Roadmap
+# 🔮 Future Roadmap
 
-- Authentication
-- Chat System
-- Memory Engine
-- Knowledge Base
-- Project Workspace
-- AI Agent Integration
-- RAG Pipeline
-- Multi-Model Support
-- Cloud Deployment
+- AI Agent Orchestration
+- Retrieval-Augmented Generation (RAG)
+- Multiple LLM Support
+- Voice Interface
+- Image Understanding
+- Vector Database Integration
+- PostgreSQL Migration
+- Docker Deployment
+- Kubernetes
+- CI/CD Pipeline
+- AWS Deployment
 - Production Monitoring
 
 ---
 
-# License
+# 🤝 Contributing
 
-This project is licensed under the MIT License.
+Contributions, ideas, and improvements are welcome.
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a Pull Request
 
 ---
 
-# Author
+# 📄 License
+
+Licensed under the MIT License.
+
+---
+
+# 👨‍💻 Author
 
 **Sai**
 
 AI Engineering Student
 
-Building production-ready AI systems with modern software engineering principles.
+Building production-ready AI systems using modern software engineering principles.
+
+GitHub:
+
+https://github.com/sai1234-do
 
 ---
 
-⭐ If you like this project, consider starring the repository.
+<div align="center">
+
+⭐ If you found this project useful, consider giving it a star.
+
+</div>
