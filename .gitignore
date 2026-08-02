@@ -1,0 +1,94 @@
+# =====================================================
+# Cortex-AI Root .gitignore
+# =====================================================
+
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Python Cache
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# -------------------------
+# Environment Variables
+# -------------------------
+.env
+.env.*
+
+# -------------------------
+# Databases
+# -------------------------
+*.db
+*.sqlite
+*.sqlite3
+
+# -------------------------
+# Logs
+# -------------------------
+*.log
+logs/
+
+# -------------------------
+# Node / React
+# -------------------------
+node_modules/
+dist/
+dist-ssr/
+build/
+coverage/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# -------------------------
+# VS Code / IDE
+# -------------------------
+.vscode/
+.idea/
+
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# -------------------------
+# OS Files
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Backend Generated Files
+# -------------------------
+backend/app/uploads/
+backend/app/chroma_db/
+
+# -------------------------
+# Frontend Generated Files
+# -------------------------
+frontend/dist/
+
+# -------------------------
+# Miscellaneous
+# -------------------------
+*.tmp
+*.temp
+*.bak
+*.orig

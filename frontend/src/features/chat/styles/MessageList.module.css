@@ -1,0 +1,65 @@
+.messages{
+
+    flex:1;
+
+    min-height:0;
+
+    overflow-y:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:20px 0;
+
+}
+
+.messageContainer{
+
+    width:min(920px,100%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+    margin:0 auto;
+
+}
+
+.empty{
+
+    width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.empty h2{
+
+    color:#F8FAFC;
+
+    font-size:42px;
+
+    margin:0;
+
+}
+
+.empty p{
+
+    color:#94A3B8;
+
+    margin-top:12px;
+
+}

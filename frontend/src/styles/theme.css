@@ -1,0 +1,17 @@
+.page{
+
+    min-height:100vh;
+
+    background:var(--bg);
+
+    color:var(--text);
+}
+
+.section{
+
+    width:min(1300px,92%);
+
+    margin:auto;
+
+    padding:64px 0;
+}

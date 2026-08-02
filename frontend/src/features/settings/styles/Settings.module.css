@@ -1,0 +1,62 @@
+.container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+}
+
+.container h1{
+
+    color:var(--text-primary);
+
+    font-size:38px;
+}
+
+.container>p{
+
+    color:var(--text-secondary);
+
+    font-size:16px;
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+}
+
+.card{
+
+    background:var(--bg-card);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:24px;
+
+    transition:.25s;
+}
+
+.card:hover{
+
+    transform:translateY(-3px);
+}
+
+.card h2{
+
+    color:var(--text-primary);
+
+    margin-bottom:12px;
+}
+
+.card p{
+
+    color:var(--text-secondary);
+
+}

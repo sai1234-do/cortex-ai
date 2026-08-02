@@ -1,0 +1,15 @@
+[data-theme="midnight"]{
+
+    --bg-primary:#090B12;
+    --bg-secondary:#111827;
+    --bg-card:#182131;
+
+    --text-primary:#F8FAFC;
+    --text-secondary:#9FB3D9;
+
+    --border:rgba(91,93,245,.15);
+
+    --primary:#7C83FF;
+    --success:#22C55E;
+    --danger:#EF4444;
+}

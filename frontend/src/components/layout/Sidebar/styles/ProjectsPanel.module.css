@@ -1,0 +1,197 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.header button {
+    background: none;
+    border: none;
+    color: #7C83FF;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.inputContainer {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.inputContainer input {
+    flex: 1;
+    padding: 10px;
+    background: #1B2234;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.inputContainer button {
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 8px;
+    background: #303B54;
+    color: white;
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 12px;
+    color: #D7D9DF;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.project:hover {
+    background: #1E293B;
+}
+
+.projectInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    min-width: 0;
+}
+
+.projectInfo span {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.renameInput {
+    flex: 1;
+    background: #1B2234;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.projectActions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+    flex-shrink: 0;
+}
+
+.project:hover .projectActions {
+    opacity: 1;
+    visibility: visible;
+}
+
+.projectActions button {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #94A3B8;
+    cursor: pointer;
+    transition: .2s;
+    padding: 0;
+}
+
+.projectActions button svg {
+    width: 16px;
+    height: 16px;
+}
+
+.projectActions button:hover {
+    background: #4F5BD5;
+    color: white;
+}
+.emptyProjectState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+    padding: 26px 16px;
+
+    border: 1px dashed rgba(255,255,255,0.08);
+    border-radius: 14px;
+
+    background: rgba(255,255,255,0.02);
+
+    text-align: center;
+
+    transition: all .25s ease;
+}
+
+.emptyProjectState:hover{
+    border-color:#6C63FF55;
+    background:rgba(108,99,255,.04);
+}
+
+.emptyProjectIcon{
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:28px;
+
+    background:#2A3045;
+    color:#8B5CF6;
+
+    margin-bottom:14px;
+}
+
+.emptyProjectTitle{
+    font-size:17px;
+    font-weight:600;
+    color:#fff;
+
+    margin-bottom:6px;
+}
+
+.emptyProjectText{
+    font-size:13px;
+    line-height:20px;
+
+    color:#94A3B8;
+
+    max-width:220px;
+}
+
+.emptyProjectText b{
+    color:#8B5CF6;
+}

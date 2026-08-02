@@ -1,0 +1,118 @@
+.wrapper{
+    margin:18px 0 22px;
+}
+
+.heading{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:#8b96b2;
+    margin-bottom:10px;
+}
+
+.item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:8px 10px;
+    margin-bottom:4px;
+
+    border-radius:8px;
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.item:hover{
+    background:rgba(255,255,255,.05);
+}
+
+.title{
+    flex:1;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+
+    font-size:14px;
+    color:#f3f4f6;
+}
+
+/* -------- Unpin button -------- */
+
+.unpin{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:22px;
+    height:22px;
+
+    margin-left:8px;
+
+    border:none;
+    background:transparent;
+
+    color:#7d8597;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    transition:.2s;
+}
+
+.item:hover .unpin{
+    opacity:1;
+}
+
+.unpin:hover{
+    color:#ef4444;
+    background:rgba(239,68,68,.12);
+}
+.row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+}
+
+.title{
+    flex:1;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.unpin{
+    width:22px;
+    height:22px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:transparent;
+    border:none;
+
+    cursor:pointer;
+
+    color:#7d8597;
+
+    opacity:0;
+
+    transition:.2s;
+
+    flex-shrink:0;
+}
+
+.item:hover .unpin{
+    opacity:1;
+}
+
+.unpin:hover{
+    color:#ef4444;
+}

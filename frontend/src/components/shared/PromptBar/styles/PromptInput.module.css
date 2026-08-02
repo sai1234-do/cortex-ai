@@ -1,0 +1,47 @@
+.promptInput{
+
+    width:100%;
+
+    min-height:28px;
+
+    max-height:120px;
+
+    resize:none;
+
+    overflow-y:auto;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:#F8FAFC;
+
+    font-size:17px;
+
+    line-height:1.6;
+
+    font-family:inherit;
+
+}
+
+.promptInput::placeholder{
+
+    color:#8A93A8;
+
+}
+
+.promptInput::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.promptInput::-webkit-scrollbar-thumb{
+
+    background:#3B435C;
+
+    border-radius:20px;
+
+}

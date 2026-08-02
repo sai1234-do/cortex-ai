@@ -1,0 +1,114 @@
+.overlay{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    backdrop-filter:blur(8px);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.modal{
+
+    width:650px;
+
+    max-height:85vh;
+
+    overflow-y:auto;
+
+    background:#111827;
+
+    color:white;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    box-shadow:0 0 40px rgba(0,0,0,.45);
+
+}
+
+.header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:24px;
+
+}
+
+.header button{
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+}
+
+section{
+
+    margin-top:22px;
+
+}
+
+section h3{
+
+    color:#7C83FF;
+
+    margin-bottom:10px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+td{
+
+    padding:8px;
+
+    border-bottom:1px solid #303B54;
+
+}
+
+details{
+
+    background:#1B2234;
+
+    border-radius:10px;
+
+    padding:10px;
+
+    margin-top:10px;
+
+}
+
+summary{
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}

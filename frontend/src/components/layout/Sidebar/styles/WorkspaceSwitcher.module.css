@@ -1,0 +1,93 @@
+.switcher{
+
+    width:100%;
+
+    margin-top:24px;
+
+    padding:16px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.switcher:hover{
+
+    background:var(--surface-hover);
+
+}
+
+.label{
+
+    display:block;
+
+    font-size:12px;
+
+    color:var(--text-secondary);
+
+}
+
+.name{
+
+    margin-top:4px;
+
+    font-size:17px;
+
+}
+
+.left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.iconBox{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:12px;
+
+    background:rgba(109,94,249,.12);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#6D5EF9;
+
+    flex-shrink:0;
+
+    transition:.25s;
+
+}
+
+.switcher:hover .iconBox{
+
+    background:rgba(109,94,249,.22);
+
+    transform:scale(1.05);
+
+}

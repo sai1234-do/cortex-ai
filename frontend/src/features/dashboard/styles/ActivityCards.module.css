@@ -1,0 +1,25 @@
+.card{
+
+    background:#1D2333;
+
+    border:1px solid #2B3348;
+
+    border-radius:18px;
+
+    padding:24px;
+
+}
+
+.card h2{
+
+    color:white;
+
+    margin-bottom:12px;
+
+}
+
+.card p{
+
+    color:#94A3B8;
+
+}

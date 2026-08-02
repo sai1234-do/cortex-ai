@@ -1,0 +1,73 @@
+.layout{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:calc(100vh - 76px);
+
+    overflow:hidden;
+
+}
+
+.messages{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    min-height:0;
+
+}
+
+.prompt{
+
+    flex-shrink:0;
+
+    padding:18px 0;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+.shareButton{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
+    width:110px;
+    height:40px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#232b3b;
+    color:#f8fafc;
+
+    font-size:14px;
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:all .2s ease;
+}
+
+.shareButton:hover{
+    background:#2e3a4d;
+    transform:translateY(-1px);
+}
+
+.shareButton svg{
+    width:17px;
+    height:17px;
+    color:#d1d5db;
+}
+.chatHeader{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    padding:12px 18px 8px;
+}

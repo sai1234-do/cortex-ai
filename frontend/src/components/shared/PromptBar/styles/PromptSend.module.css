@@ -1,0 +1,43 @@
+.sendButton{
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:linear-gradient(
+        135deg,
+        #6D5EF9,
+        #4F46E5
+    );
+
+    color:white;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.25s;
+
+}
+
+.sendButton:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 25px rgba(109,94,249,.45);
+
+}
+
+.sendButton:active{
+
+    transform:scale(.96);
+
+}

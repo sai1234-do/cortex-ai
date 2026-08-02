@@ -1,0 +1,223 @@
+.markdown{
+
+    color:#E5E7EB;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+    word-break:break-word;
+
+}
+
+.markdown h1{
+
+    font-size:30px;
+
+    margin:24px 0 16px;
+
+    font-weight:700;
+
+}
+
+.markdown h2{
+
+    font-size:24px;
+
+    margin:22px 0 14px;
+
+    font-weight:700;
+
+}
+
+.markdown h3{
+
+    font-size:20px;
+
+    margin:18px 0 12px;
+
+    font-weight:600;
+
+}
+
+.markdown p{
+
+    margin:12px 0;
+
+}
+
+.markdown ul{
+
+    padding-left:24px;
+
+    margin:14px 0;
+
+}
+
+.markdown ol{
+
+    padding-left:24px;
+
+    margin:14px 0;
+
+}
+
+.markdown li{
+
+    margin:8px 0;
+
+}
+
+.markdown strong{
+
+    color:white;
+
+    font-weight:700;
+
+}
+
+.markdown table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin:18px 0;
+
+}
+
+.markdown th,
+
+.markdown td{
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:10px;
+
+    text-align:left;
+
+}
+
+.markdown blockquote{
+
+    border-left:4px solid #7C3AED;
+
+    padding-left:16px;
+
+    margin:18px 0;
+
+    color:#CBD5E1;
+
+}
+
+.codeWrapper{
+
+    margin:18px 0;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    background:#0B1220;
+
+}
+
+.codeHeader{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 18px;
+
+    background:#111827;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+.codeHeader span{
+
+    color:#94A3B8;
+
+    font-size:13px;
+
+    text-transform:capitalize;
+
+}
+
+.codeHeader button{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    background:none;
+
+    border:none;
+
+    color:#CBD5E1;
+
+    cursor:pointer;
+
+}
+
+.codeWrapper pre{
+
+    margin:0;
+
+    padding:20px;
+
+    overflow:auto;
+
+}
+
+.codeWrapper code{
+
+    background:none;
+
+    padding:0;
+
+}
+
+.markdown{
+    font-size:15px;
+    line-height:1.75;
+    color:#E5E7EB;
+}
+
+.markdown p{
+    margin:14px 0;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3{
+    margin:20px 0 12px;
+}
+
+.markdown ul,
+.markdown ol{
+    padding-left:24px;
+    margin:14px 0;
+}
+
+.markdown li{
+    margin:8px 0;
+}
+
+.markdown pre{
+    margin:18px 0;
+}
+
+.markdown code:not(pre code){
+    background:#1F2937;
+    padding:2px 6px;
+    border-radius:6px;
+}

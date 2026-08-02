@@ -1,0 +1,44 @@
+.actions{
+    display:flex;
+    gap:12px;
+    flex:1;
+}
+
+.actionButton{
+
+    flex:1;
+
+    height:46px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    background:#232B3E;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:14px;
+
+    color:#E2E8F0;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.actionButton:hover{
+
+    background:#303B54;
+
+    border-color:#6D5EF9;
+
+}
+
+.actionButton svg{
+    font-size:16px;
+}

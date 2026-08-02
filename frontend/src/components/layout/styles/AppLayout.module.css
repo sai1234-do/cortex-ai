@@ -1,0 +1,40 @@
+.layout{
+    display:flex;
+    width:100vw;
+    height:100vh;
+    background:var(--bg-primary);
+    overflow:hidden;
+}
+
+.mainContainer{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    background:#111827;
+    min-width:0;
+    overflow:hidden;
+}
+
+.mainContent{
+    flex:1;
+    background:#111827;
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    padding:32px;
+
+    box-sizing:border-box;
+}
+
+.mainContent::-webkit-scrollbar{
+    width:8px;
+}
+
+.mainContent::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+.mainContent::-webkit-scrollbar-thumb{
+    background:#39445f;
+    border-radius:20px;
+}

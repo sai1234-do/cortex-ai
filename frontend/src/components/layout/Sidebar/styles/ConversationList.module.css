@@ -1,0 +1,155 @@
+.list{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:10px;
+
+    margin-top:18px;
+
+    flex-shrink:0;
+}
+
+.heading{
+
+    color:#94A3B8;
+    font-size:13px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+
+}
+
+.item{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    color:#E2E8F0;
+
+    transition:.2s;
+
+}
+
+.item:hover{
+
+    background:#1E293B;
+
+}
+
+.active{
+
+    background:#334155;
+
+}
+
+.title{
+
+    flex:1;
+
+    overflow:hidden;
+
+    white-space:nowrap;
+
+    text-overflow:ellipsis;
+
+}
+
+.actions{
+
+    display:flex;
+
+    gap:6px;
+
+}
+
+.actions button{
+
+    width:30px;
+    height:30px;
+
+    border:none;
+
+    background:transparent;
+
+    color:#94A3B8;
+
+    cursor:pointer;
+
+}
+
+.renameInput{
+
+    flex:1;
+
+    background:#111827;
+
+    color:white;
+
+    border:none;
+
+    outline:none;
+
+    padding:6px 8px;
+
+    border-radius:6px;
+
+}
+.emptyState{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    color:#94A3B8;
+
+}
+
+.emptyIcon{
+
+    font-size:42px;
+
+    margin-bottom:14px;
+
+    opacity:.85;
+
+}
+
+.emptyState h4{
+
+    margin:0;
+
+    color:#E2E8F0;
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+.emptyState p{
+
+    margin-top:8px;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+    max-width:220px;
+
+}

@@ -1,0 +1,15 @@
+[data-theme="dark"]{
+
+    --bg-primary:#111827;
+    --bg-secondary:#1B2233;
+    --bg-card:#20283A;
+
+    --text-primary:#F8FAFC;
+    --text-secondary:#94A3B8;
+
+    --border:rgba(255,255,255,.06);
+
+    --primary:#5B5DF5;
+    --success:#22C55E;
+    --danger:#EF4444;
+}

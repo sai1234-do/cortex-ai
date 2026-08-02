@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body,
+#root{
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    background:#111827;
+}
+
+body{
+
+    background:#111827;
+    color:#F8FAFC;
+    font-family:Inter,sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    font-family:inherit;
+}
+
+input,
+textarea{
+    font-family:inherit;
+}
+
+/* Hide browser scrollbar */
+
+html,
+body,
+#root{
+
+    overflow:hidden;
+}
+
+/* App scrollbar */
+
+*{
+
+    scrollbar-width:thin;
+    scrollbar-color:#3B4258 transparent;
+}
+
+/* Chrome / Edge */
+
+::-webkit-scrollbar{
+
+    width:8px;
+    height:8px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:transparent;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#3B4258;
+
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#56627E;
+}
+
+body{
+
+    background:var(--bg-primary);
+
+    color:var(--text-primary);
+
+    transition:background var(--transition),
+               color var(--transition);
+}
