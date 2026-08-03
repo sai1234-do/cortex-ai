@@ -76,7 +76,7 @@ app.include_router(
 )
 
 app.include_router(
-    project.router,a
+    project.router,
     prefix="/api/v1",
     tags=["Projects"]
 )
