@@ -1,5 +1,9 @@
+import os
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+print("===== ENVIRONMENT VARIABLES =====")
+print(dict(os.environ))
+print("=================================")
 
 class Settings(BaseSettings):
     APP_NAME: str
@@ -14,12 +18,4 @@ class Settings(BaseSettings):
         extra="ignore"
     )
 
-
 settings = Settings()
-
-print("APP_NAME =", settings.APP_NAME)
-print("DEBUG =", settings.DEBUG)
-print("HOST =", settings.HOST)
-print("PORT =", settings.PORT)
-print("SECRET_KEY loaded =", bool(settings.SECRET_KEY))
-print("GROQ loaded =", bool(settings.GROQ_API_KEY))
