@@ -8,8 +8,7 @@ from app.core.config import settings
 client = AsyncGroq(
     api_key=settings.GROQ_API_KEY
 )
-
-MODEL = "llama-3.1-8b-instant"
+MODEL = "openai/gpt-oss-120b"
 
 
 async def generate_stream(
