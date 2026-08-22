@@ -9,7 +9,7 @@ client = AsyncGroq(
     api_key=settings.GROQ_API_KEY
 )
 
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "llama-3.1-8b-instant"
 
 
 async def generate_stream(
