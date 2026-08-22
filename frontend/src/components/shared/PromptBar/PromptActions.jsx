@@ -7,7 +7,11 @@ import { LuBrain } from "react-icons/lu";
 
 import styles from "./styles/PromptActions.module.css";
 
-export default function PromptActions({ onUploadClick,onWebClick,onThinkClick }) {
+export default function PromptActions({
+    onUploadClick,
+    onWebClick,
+    onThinkClick
+}) {
 
     return (
 
@@ -16,32 +20,43 @@ export default function PromptActions({ onUploadClick,onWebClick,onThinkClick })
             <button
                 className={styles.actionButton}
                 onClick={onUploadClick}
+                aria-label="Upload file"
+                title="Upload"
             >
+
                 <FiPaperclip />
-                Upload
+
+                <span>Upload</span>
+
             </button>
 
-            <button
-             className={styles.actionButton}
-             onClick={() => {
-                
-                onWebClick?.();
-            }}
-            >
-                <FiGlobe />
-                 Web
-           </button>
 
-           <button
-            className={styles.actionButton}
-            onClick={() => {
-              console.log("THINK BUTTON CLICKED");
-              onThinkClick?.();
-            }}
+            <button
+                className={styles.actionButton}
+                onClick={() => onWebClick?.()}
+                aria-label="Web search"
+                title="Web"
             >
-              <LuBrain />
-               Think
-           </button>
+
+                <FiGlobe />
+
+                <span>Web</span>
+
+            </button>
+
+
+            <button
+                className={styles.actionButton}
+                onClick={() => onThinkClick?.()}
+                aria-label="Think"
+                title="Think"
+            >
+
+                <LuBrain />
+
+                <span>Think</span>
+
+            </button>
 
         </div>
 

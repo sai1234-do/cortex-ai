@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import { useLocation } from "react-router-dom";
 
 import styles from "./styles/Sidebar.module.css";
 
@@ -14,49 +15,109 @@ export default function Sidebar() {
 
     const [mobileOpen, setMobileOpen] = useState(false);
 
+    const location = useLocation();
+
+
+    /* Close drawer after navigation */
+
+    useEffect(() => {
+
+        setMobileOpen(false);
+
+    }, [location.pathname]);
+
+
+    /* Prevent background scrolling */
+
+    useEffect(() => {
+
+        if (mobileOpen) {
+
+            document.body.style.overflow = "hidden";
+
+        } else {
+
+            document.body.style.overflow = "";
+
+        }
+
+        return () => {
+
+            document.body.style.overflow = "";
+
+        };
+
+    }, [mobileOpen]);
+
+
     return (
 
         <>
+
+            {/* Mobile hamburger */}
 
             <button
                 className={styles.mobileToggle}
                 onClick={() => setMobileOpen(true)}
                 aria-label="Open sidebar"
+                aria-expanded={mobileOpen}
             >
+
                 <FiMenu size={22} />
+
             </button>
+
+
+            {/* Overlay */}
 
             {mobileOpen && (
 
                 <div
                     className={styles.backdrop}
                     onClick={() => setMobileOpen(false)}
+                    aria-hidden="true"
                 />
 
             )}
 
+
+            {/* Sidebar */}
+
             <aside
-                className={`${styles.sidebar} ${
-                    mobileOpen ? styles.mobileOpen : ""
-                }`}
+                className={`
+                    ${styles.sidebar}
+                    ${mobileOpen ? styles.mobileOpen : ""}
+                `}
             >
+
+                {/* Close button */}
 
                 <button
                     className={styles.closeButton}
                     onClick={() => setMobileOpen(false)}
                     aria-label="Close sidebar"
                 >
+
                     <FiX size={22} />
+
                 </button>
 
+
                 <div className={styles.brand}>
+
                     <h2>🧠 Cortex</h2>
-                    <p>Personal Cognitive OS</p>
+
+                    <p>
+                        Personal Cognitive OS
+                    </p>
+
                 </div>
+
 
                 <BrainStatus />
 
                 <Navigation />
+
 
                 <div className={styles.scrollArea}>
 
@@ -67,6 +128,7 @@ export default function Sidebar() {
                     <ConversationList />
 
                     <AccountPanel />
+
 
                     <div className={styles.footer}>
 

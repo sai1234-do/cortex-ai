@@ -1,44 +1,105 @@
-.actions{
-    display:flex;
-    gap:12px;
-    flex:1;
-}
+.actions {
 
-.actionButton{
+    display: flex;
 
-    flex:1;
+    gap: 8px;
 
-    height:46px;
+    flex: 1;
 
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:8px;
-
-    background:#232B3E;
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:14px;
-
-    color:#E2E8F0;
-
-    cursor:pointer;
-
-    transition:.2s;
-}
-
-.actionButton:hover{
-
-    background:#303B54;
-
-    border-color:#6D5EF9;
+    min-width: 0;
 
 }
 
-.actionButton svg{
-    font-size:16px;
+
+.actionButton {
+
+    flex: 1;
+
+    height: 42px;
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    background: #232B3E;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 12px;
+
+    color: #E2E8F0;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+
+}
+
+
+.actionButton:hover {
+
+    background: #303B54;
+
+    border-color: #6D5EF9;
+
+}
+
+
+.actionButton svg {
+
+    font-size: 15px;
+
+    flex-shrink: 0;
+
+}
+
+
+/* ========================================= */
+/* MOBILE */
+/* ========================================= */
+
+@media (max-width: 600px) {
+
+    .actions {
+
+        gap: 7px;
+
+        flex: 1;
+
+    }
+
+
+    .actionButton {
+
+        flex: 0 0 auto;
+
+        width: 42px;
+
+        height: 40px;
+
+        padding: 0;
+
+        border-radius: 12px;
+
+        font-size: 0;
+
+    }
+
+
+    .actionButton svg {
+
+        font-size: 17px;
+
+    }
+
 }

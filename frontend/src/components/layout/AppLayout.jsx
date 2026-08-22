@@ -17,7 +17,7 @@ export default function AppLayout({ children }) {
 
         <div className={styles.layout}>
 
-             <Sidebar /> 
+            <Sidebar />
 
             <div className={styles.mainContainer}>
 

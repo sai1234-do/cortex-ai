@@ -1,39 +1,41 @@
-/* ===========================
-   Shared Prompt Bar
-=========================== */
+/* ========================================= */
+/* CHAT PROMPT */
+/* ========================================= */
 
-.promptContainer{
+.promptContainer {
 
-    flex-shrink:0;
+    flex-shrink: 0;
 
-    width:min(920px,100%);
+    width: min(920px, 100%);
 
-    margin:0 auto;
+    margin: 0 auto;
 
-    background:rgba(24,31,47,.78);
+    box-sizing: border-box;
 
-    backdrop-filter:blur(22px);
-    -webkit-backdrop-filter:blur(22px);
+    background: rgba(24,31,47,.82);
 
-    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter: blur(22px);
 
-    border-radius:28px;
+    -webkit-backdrop-filter: blur(22px);
 
-    padding:18px;
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 28px;
+
+    padding: 18px;
 
     box-shadow:
         0 18px 50px rgba(0,0,0,.35),
         0 0 0 1px rgba(255,255,255,.03);
 
-    transition:all .25s ease;
+    transition: .25s ease;
 
 }
 
-.promptContainer:hover{
 
-    transform:translateY(-2px);
+.promptContainer:hover {
 
-    border-color:rgba(109,94,249,.35);
+    border-color: rgba(109,94,249,.35);
 
     box-shadow:
         0 24px 60px rgba(0,0,0,.45),
@@ -41,211 +43,324 @@
 
 }
 
-/* ===========================
-   Dashboard Prompt
-=========================== */
 
-.dashboardPrompt{
+/* ========================================= */
+/* DASHBOARD */
+/* ========================================= */
 
-    width:100%;
+.dashboardPrompt {
 
-    max-width:980px;
+    width: 100%;
 
-    margin:24px auto;
+    max-width: 980px;
 
-    background:#1B2234;
+    margin: 24px auto;
 
-    border:1px solid rgba(255,255,255,.06);
+    box-sizing: border-box;
 
-    border-radius:24px;
+    background: #1B2234;
 
-    padding:18px;
+    border: 1px solid rgba(255,255,255,.06);
 
-    box-shadow:0 12px 30px rgba(0,0,0,.25);
+    border-radius: 24px;
 
-}
+    padding: 18px;
 
-/* ===========================
-   Input
-=========================== */
-
-.promptInput{
-
-    width:100%;
-
-    resize:none;
-
-    border:none;
-
-    outline:none;
-
-    background:transparent;
-
-    color:#F8FAFC;
-
-    font-size:17px;
-
-    line-height:1.6;
-
-    font-family:inherit;
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.25);
 
 }
 
-.promptInput::placeholder{
 
-    color:#8A93A8;
+/* ========================================= */
+/* TEXT INPUT */
+/* ========================================= */
 
-}
+.promptInput {
 
-/* ===========================
-   Bottom Row
-=========================== */
+    display: block;
 
-.bottomRow{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    align-items:center;
-    justify-content:space-between;
-    margin-top:16px;
-}
+    width: 100%;
 
-/* ===========================
-   Left Actions
-=========================== */
-.leftActions{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    flex:1;
-}
+    min-height: 30px;
 
-.leftActions button{
+    max-height: 180px;
 
-    flex:1 1 140px;
-    min-width:120px;
-    max-width:180px;
-}
+    resize: none;
 
-.leftActions button:hover{
+    overflow-y: auto;
 
-    background:#303B54;
+    box-sizing: border-box;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #F8FAFC;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    font-family: inherit;
 
 }
 
-/* ===========================
-   Right Actions
-=========================== */
 
-.rightActions{
+.promptInput::placeholder {
 
-    display:flex;
-
-    align-items:center;
-
-    gap:12px;
+    color: #8A93A8;
 
 }
 
-.rightActions button{
 
-    width:44px;
+.promptInput::-webkit-scrollbar {
 
-    height:44px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:#232B3E;
-
-    color:white;
-
-    cursor:pointer;
-
-    transition:.2s;
+    width: 5px;
 
 }
 
-.rightActions button:hover{
 
-    background:#303B54;
+.promptInput::-webkit-scrollbar-thumb {
 
-}
+    background: #3B435C;
 
-.sendButton{
-
-    background:linear-gradient(135deg,#6D5EF9,#8B7CFF)!important;
+    border-radius: 20px;
 
 }
 
-.sendButton:hover{
 
-    transform:scale(1.05);
+/* ========================================= */
+/* BOTTOM ROW */
+/* ========================================= */
 
-    box-shadow:0 0 18px rgba(109,94,249,.45);
+.bottomRow {
 
-}
-/* ===========================
-   Uploaded Files
-=========================== */
+    display: flex;
 
-.fileContainer{
+    align-items: center;
 
-    display:flex;
+    gap: 10px;
 
-    flex-wrap:wrap;
+    width: 100%;
 
-    gap:10px;
-
-    margin-bottom:14px;
+    margin-top: 14px;
 
 }
 
-.fileChip{
 
-    display:flex;
+.bottomRow > :first-child {
 
-    align-items:center;
+    flex: 1;
 
-    gap:8px;
-
-    padding:8px 14px;
-
-    background:#232B3E;
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:999px;
-
-    color:white;
-
-    font-size:14px;
+    min-width: 0;
 
 }
 
-.fileChip button{
 
-    display:flex;
+/* ========================================= */
+/* FILES */
+/* ========================================= */
 
-    align-items:center;
+.fileContainer {
 
-    justify-content:center;
+    display: flex;
 
-    border:none;
+    flex-wrap: wrap;
 
-    background:none;
+    gap: 8px;
 
-    color:#B8C0D0;
-
-    cursor:pointer;
-
-    padding:0;
+    margin-bottom: 12px;
 
 }
 
-.fileChip button:hover{
 
-    color:#FF6B6B;
+.fileChip {
+
+    max-width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px 11px;
+
+    background: #232B3E;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 999px;
+
+    color: white;
+
+    font-size: 13px;
+
+}
+
+
+.fileChip span {
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    max-width: 220px;
+
+}
+
+
+.fileChip button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    background: none;
+
+    color: #B8C0D0;
+
+    cursor: pointer;
+
+    padding: 0;
+
+}
+
+
+.fileChip button:hover {
+
+    color: #FF6B6B;
+
+}
+
+
+/* ========================================= */
+/* DASHBOARD MOBILE */
+/* ========================================= */
+
+@media (max-width: 768px) {
+
+    .promptContainer {
+
+        width: calc(100% - 20px);
+
+        margin: 0 auto;
+
+        padding: 13px;
+
+        border-radius: 22px;
+
+        box-shadow:
+            0 12px 35px rgba(0,0,0,.4);
+
+    }
+
+
+    .dashboardPrompt {
+
+        width: calc(100% - 20px);
+
+        margin: 14px auto;
+
+        padding: 14px;
+
+        border-radius: 20px;
+
+    }
+
+
+    .promptInput {
+
+        min-height: 28px;
+
+        max-height: 140px;
+
+        font-size: 16px;
+
+        line-height: 1.5;
+
+    }
+
+
+    .bottomRow {
+
+        margin-top: 10px;
+
+        gap: 8px;
+
+    }
+
+
+    .fileContainer {
+
+        margin-bottom: 9px;
+
+    }
+
+}
+
+
+/* ========================================= */
+/* SMALL PHONE */
+/* ========================================= */
+
+@media (max-width: 480px) {
+
+    .promptContainer {
+
+        width: calc(100% - 12px);
+
+        padding: 11px;
+
+        border-radius: 20px;
+
+        margin-bottom: 6px;
+
+    }
+
+
+    .dashboardPrompt {
+
+        width: calc(100% - 12px);
+
+        padding: 12px;
+
+        border-radius: 19px;
+
+    }
+
+
+    .promptInput {
+
+        font-size: 16px;
+
+        max-height: 130px;
+
+    }
+
+
+    .fileChip {
+
+        font-size: 12px;
+
+        padding: 6px 9px;
+
+    }
+
+
+    .fileChip span {
+
+        max-width: 150px;
+
+    }
 
 }
