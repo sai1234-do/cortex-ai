@@ -344,7 +344,7 @@ Licensed under the MIT License.
 
 # 👨‍💻 Author
 
-**Sai**
+**D.Saicharan**
 
 AI Engineering Student
 
@@ -356,8 +356,7 @@ https://github.com/sai1234-do
 
 ---
 
-<div align="center">
+
 
 ⭐ If you found this project useful, consider giving it a star.
 
-</div>
