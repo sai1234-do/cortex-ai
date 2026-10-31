@@ -31,7 +31,7 @@ async def register_user(data: SignupRequest):
 
             status_code=400,
 
-            detail=str(e)
+            detail="Internal server error"
 
         )
 
