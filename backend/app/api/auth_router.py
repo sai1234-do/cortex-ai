@@ -42,5 +42,5 @@ async def login_route(data: LoginRequest):
     except Exception as e:
         raise HTTPException(
             status_code=401,
-            detail=str(e)
+            detail="Internal server error"
         )
